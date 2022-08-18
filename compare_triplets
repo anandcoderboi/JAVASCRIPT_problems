@@ -1,0 +1,19 @@
+      let alice_challenge = [];
+      let bob_challenge = [];
+      let range = 2;
+      for (i = 0; i <= range; i++) {
+        alice_challenge[i] = prompt("enter alice rating");
+        bob_challenge[i] = prompt("enter bob rating");
+      }
+      function compare_triplets(alice_challenge, bob_challenge) {
+        let alicePoints = 0;
+        let bobPoints = 0;
+        if (parseInt(alice_challenge[i]) > parseInt(bob_challenge[i])) {
+          alicePoints++;
+        } else if (parseInt(alice_challenge[i]) < parseInt(bob_challenge[i])) {
+          bobPoints++;
+        }
+
+        return [alicePoints, bobPoints];
+      }
+      console.log(compare_triplets(alice_challenge, bob_challenge));
